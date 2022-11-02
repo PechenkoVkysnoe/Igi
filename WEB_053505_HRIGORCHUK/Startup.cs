@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WEB_053505_HRIGORCHUK.Data;
+using WEB_053505_HRIGORCHUK.Entities;
 
 namespace WEB_053505_HRIGORCHUK
 {
@@ -30,15 +31,48 @@ namespace WEB_053505_HRIGORCHUK
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+            
+
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+                {
+                    options.SignIn.RequireConfirmedAccount = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireNonAlphanumeric = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequireDigit = false;
+                })
+                .AddEntityFrameworkStores<ApplicationDbContext>() 
+                .AddDefaultTokenProviders();
+            services.AddAuthorization();
+            services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddControllersWithViews();
+
+            
+            services.AddRazorPages();
+            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddDistributedMemoryCache();
+            services.AddSession(opt =>
+            {
+                opt.Cookie.HttpOnly = true;
+                opt.Cookie.IsEssential = true;
+            });
+            
+            services.ConfigureApplicationCookie(options =>
+                {
+                    options.LoginPath = $"/Identity/Account/Login";
+                    options.LogoutPath = $"/Identity/Account/Logout";
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, 
+                                IWebHostEnvironment env,
+                                ApplicationDbContext context,
+                                UserManager<ApplicationUser> userManager,
+                                RoleManager<IdentityRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -58,6 +92,7 @@ namespace WEB_053505_HRIGORCHUK
 
             app.UseAuthentication();
             app.UseAuthorization();
+            DbInitializer.Seed(context, userManager, roleManager).Wait();
 
             app.UseEndpoints(endpoints =>
             {
