@@ -14,6 +14,8 @@ namespace WEB_053505_HRIGORCHUK.Data
             : base(options)
         {
         }
+
+        public DbSet<WEB_053505_HRIGORCHUK.Entities.Product> Product { get; set; }
     }
 
 }
