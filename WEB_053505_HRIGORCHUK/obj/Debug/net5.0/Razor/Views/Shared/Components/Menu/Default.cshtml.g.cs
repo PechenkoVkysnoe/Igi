@@ -34,7 +34,7 @@ using WEB_053505_HRIGORCHUK.Entities;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"69bc7d3aa41ee9b22f533db7ca4b8b77916da5e7", @"/Views/Shared/Components/Menu/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1e6b75cc0359b0f126d08ff098d67c6a1438e265", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"615bf76afc2e43bc73cff07141b77c9134f190e6", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_Menu_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<MenuItem>>
     #nullable disable

@@ -34,7 +34,7 @@ using WEB_053505_HRIGORCHUK.Entities;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"31fa04514dd81bf15dbfc560ffad6bcc09003250", @"/Views/Product/_ListItemPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1e6b75cc0359b0f126d08ff098d67c6a1438e265", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"615bf76afc2e43bc73cff07141b77c9134f190e6", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Product__ListItemPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Product>
     #nullable disable

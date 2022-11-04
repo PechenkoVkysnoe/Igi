@@ -170,3 +170,6 @@ C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK\bin\Debu
 C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK\obj\Debug\net5.0\Razor\Views\Product\_ListItemPartial.cshtml.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Properties.Resources.resources
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.csproj.GenerateResource.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK\obj\Debug\net5.0\Razor\Views\Product\_ListPartial.cshtml.g.cs

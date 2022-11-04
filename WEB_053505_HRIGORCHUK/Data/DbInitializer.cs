@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WEB_053505_HRIGORCHUK.Entities;
@@ -46,44 +47,44 @@ namespace WEB_053505_HRIGORCHUK.Data
                 await userManager.AddToRoleAsync(admin, "admin");
             }
             //проверка наличия групп объектов
-            /*if (!context.ProductGroups.Any())
+            if (!context.Categories.Any())
             {
-                context.ProductGroups.AddRange(
-                new List<ProductGroup>
+                context.Categories.AddRange(
+                new List<Category>
                 {
-                    new ProductGroup {ProductGroupId=1, GroupName="Биты"},
-                    new ProductGroup {ProductGroupId=2, GroupName="Мячи"},
-                    new ProductGroup {ProductGroupId=3, GroupName="Чешки"},
-                    new ProductGroup {ProductGroupId=4, GroupName="Велосипеды"},
+                    new Category {CategoryName="Футбольные мячи"},
+                    new Category {CategoryName="Велосипеды"},
+                    new Category {CategoryName="Биты"},
+                    new Category {CategoryName="Гантели"}
                 });
                 await context.SaveChangesAsync();
             }
-            // проверка наличия объектов
             if (!context.Products.Any())
             {
                 context.Products.AddRange(
                 new List<Product>
                 {
-                    new Product {ProductId = 1, ProductName="Бита-ударник",
-                    Description="Ударяет больно", ProductGroupId=1, Image="1.png" },
-                    new Product {ProductId = 2, ProductName="Бита-приёмник",
-                    Description="Принимает хорошо", ProductGroupId=1, Image="2.jpg" },
-                    new Product {ProductId = 3, ProductName="Мяч-скакун",
-                    Description="Скачет", ProductGroupId=2, Image="3.jpg" },
-                    new Product {ProductId = 4, ProductName="Мяч-прыгун",
-                    Description="Прыгает", ProductGroupId=2, Image="4.jpg" },
-                    new Product {ProductId = 5, ProductName="Чешки из Чехии",
-                    Description="Само совершенство", ProductGroupId=3, Image="5.jpg" },
-                    new Product {ProductId = 6, ProductName="Чешки из Китая",
-                    Description="Хуже не придумаешь", ProductGroupId=3, Image="6.jpg" },
-                    new Product {ProductId = 7, ProductName="Велосипед-Аист",
-                    Description="Можно залететь", ProductGroupId=4, Image="7.jpg" },
-                    new Product {ProductId = 8, ProductName="Велосипед-горник",
-                    Description="Для медведей на велосипеде", ProductGroupId=4, Image="8.jpg" },
+                    new Product{ ProductName="Скок", Description="Делает только скок",
+                    Price=7, CategoryId=1, Image="ball2.jpg"},
+                    new Product{ ProductName="Прык-скок", Description="Делает прык и скок",
+                    Price=19, CategoryId=1, Image="ball2.jpg"},
+                    new Product{ ProductName="Прык", Description="Делает прык но не делает скок",
+                    Price=9, CategoryId=1, Image="ball3.jpg"},
+                    new Product{ ProductName="Мужская гантеля", Description="Для настоящих мужиков",
+                    Price=45, CategoryId=4, Image="gant1.jpg"},
+
+                    new Product {ProductName="Бита-ударник",
+                    Description="Ударяет больно", CategoryId=3, Price=88, Image="beat1.jpg" },
+                    new Product {ProductName="Бита-приёмник",
+                    Description="Принимает хорошо", CategoryId=3, Price=99, Image="beat2.jfif" },
+                    new Product {ProductName="Велосипед-Аист",
+                    Description="Можно залететь",CategoryId=2, Price=425, Image="cycle1.jpg" },
+                    new Product {ProductName="Велосипед-горник",
+                    Description="Для медведей на велосипеде", CategoryId=2, Price=555, Image="cycle2.png" },
 
                 });
                 await context.SaveChangesAsync();
-            }*/
+            }
         }
     }
 }
