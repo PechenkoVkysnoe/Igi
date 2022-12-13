@@ -17,10 +17,16 @@ namespace WEB_053505_HRIGORCHUK
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+           Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            })
+            .ConfigureLogging(lp =>
+            {
+                lp.AddFilter("Microsoft", LogLevel.Error);
+                lp.AddFilter("Microsoft.Hosting.Lifetime", LogLevel.None);
+            });
+             
     }
 }

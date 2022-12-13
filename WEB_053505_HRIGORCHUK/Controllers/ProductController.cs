@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
 using WEB_053505_HRIGORCHUK.Data;
@@ -11,16 +12,19 @@ namespace WEB_053505_HRIGORCHUK.Controllers
     public class ProductController : Controller
     {
         ApplicationDbContext _context;
+        private ILogger _logger;
         int _pageSize;
-        public ProductController(ApplicationDbContext context)
+        public ProductController(ApplicationDbContext context, ILogger<ProductController> logger)
         {
             _pageSize = 3;
             _context = context;
+            _logger = logger;
         }
         [Route("Catalog")]
         [Route("Catalog/Page_{pageNo}")]
         public IActionResult Index(int? group, int pageNo = 1)
         {
+            _logger.LogInformation($"info: group={group}, page={pageNo}");
             var productsFiltered = _context.Products
             .Where(d => !group.HasValue || d.CategoryId == group.Value);
             // Поместить список групп во ViewData

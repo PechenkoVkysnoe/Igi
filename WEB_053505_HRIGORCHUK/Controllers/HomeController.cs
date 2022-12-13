@@ -21,6 +21,8 @@ namespace WEB_053505_HRIGORCHUK.Controllers
         
         public IActionResult Index()
         {
+            //User.Identity.IsAuthenticated
+
             ViewData["Text"] = "Лабораторная работа 2";
             ViewData["Lst"] = new SelectList(_listDemo, "ListItemValue", "ListItemText");
             return View();

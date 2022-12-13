@@ -8,11 +8,12 @@
     <WebStackScaffolding_ViewDialogWidth>800</WebStackScaffolding_ViewDialogWidth>
     <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
-    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile>
     </WebStackScaffolding_LayoutPageFile>
-    <_SelectedScaffolderID>IdentityScaffolder</_SelectedScaffolderID>
-    <_SelectedScaffolderCategoryPath>root/Identity</_SelectedScaffolderCategoryPath>
+    <_SelectedScaffolderID>RazorPageScaffolder</_SelectedScaffolderID>
+    <_SelectedScaffolderCategoryPath>root/Common/RazorPage</_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_DbContextTypeFullName>WEB_053505_HRIGORCHUK.Data.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_DbContextDialogWidth>650,4</WebStackScaffolding_DbContextDialogWidth>
   </PropertyGroup>
 </Project>

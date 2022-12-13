@@ -1,0 +1,17 @@
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.csproj.AssemblyReference.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.AssemblyInfoInputs.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.AssemblyInfo.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.csproj.CoreCompileInputs.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.RazorComponent.input.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor.Server\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Server.RazorComponent.output.cache

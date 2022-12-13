@@ -1,0 +1,12 @@
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\bin\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.deps.json
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\bin\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.dll
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\bin\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.pdb
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.csproj.AssemblyReference.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.AssemblyInfoInputs.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.AssemblyInfo.cs
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.csproj.CoreCompileInputs.cache
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.dll
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\refint\WEB_053505_HRIGORCHUK.Blazor.Shared.dll
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\WEB_053505_HRIGORCHUK.Blazor.Shared.pdb
+C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK.Blazor\Shared\obj\Debug\net5.0\ref\WEB_053505_HRIGORCHUK.Blazor.Shared.dll

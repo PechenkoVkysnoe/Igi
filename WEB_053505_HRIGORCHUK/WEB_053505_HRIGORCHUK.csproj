@@ -6,6 +6,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Scripts\bs-custom-file-input.js" />
+    <None Remove="Scripts\bs-custom-file-input.js.map" />
+    <None Remove="Scripts\bs-custom-file-input.min.js" />
+    <None Remove="Scripts\bs-custom-file-input.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Scripts\bs-custom-file-input.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Scripts\bs-custom-file-input.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Scripts\bs-custom-file-input.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Scripts\bs-custom-file-input.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.16" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.17" />
@@ -16,6 +42,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
   </ItemGroup>
 
 </Project>

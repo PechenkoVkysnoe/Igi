@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -7,12 +8,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WEB_053505_HRIGORCHUK.Data;
 using WEB_053505_HRIGORCHUK.Entities;
+using WEB_053505_HRIGORCHUK.Extensions;
+using WEB_053505_HRIGORCHUK.Models;
+using WEB_053505_HRIGORCHUK.Services;
 
 namespace WEB_053505_HRIGORCHUK
 {
@@ -52,7 +57,7 @@ namespace WEB_053505_HRIGORCHUK
 
             
             services.AddRazorPages();
-            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddDistributedMemoryCache();
             services.AddSession(opt =>
             {
@@ -65,6 +70,7 @@ namespace WEB_053505_HRIGORCHUK
                     options.LoginPath = $"/Identity/Account/Login";
                     options.LogoutPath = $"/Identity/Account/Logout";
                 });
+            services.AddScoped<Cart>(sp => CartService.GetCart(sp));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,8 +78,10 @@ namespace WEB_053505_HRIGORCHUK
                                 IWebHostEnvironment env,
                                 ApplicationDbContext context,
                                 UserManager<ApplicationUser> userManager,
-                                RoleManager<IdentityRole> roleManager)
+                                RoleManager<IdentityRole> roleManager,
+                                ILoggerFactory logger)
         {
+           
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -87,11 +95,13 @@ namespace WEB_053505_HRIGORCHUK
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseFileLogging();
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseSession();
             app.UseAuthorization();
+            logger.AddFile("Logs/log-{Date}.txt");
             DbInitializer.Seed(context, userManager, roleManager).Wait();
 
             app.UseEndpoints(endpoints =>

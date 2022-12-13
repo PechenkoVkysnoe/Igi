@@ -1,0 +1,21 @@
+﻿@if (Product != null)
+{
+    <img src="@imageSrc" class="img-thumbnail" width="150" />
+    <div>
+        <p>@Product.ProductName - @Product.Description</p> <div class="badge badge-info ">@Product.Price тугриков</div>
+    </div>
+
+}
+@code {
+    [Parameter]
+    public DetailsViewModel Product { get; set; }
+    [Parameter]
+    public EventCallback<DetailsViewModel> ProductChanged { get; set; }
+    string imageSrc
+    {
+        get
+        {
+            return $"images/{Product.Image}";
+        }
+    }
+}

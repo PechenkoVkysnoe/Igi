@@ -1,0 +1,4 @@
+2022-11-16T00:33:38.8846687+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-11-16T00:33:38.9021541+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-11-16T00:33:38.9025229+03:00  [INF] Content root path: "C:\Users\1mish\source\repos\WEB_053505_HRIGORCHUK\WEB_053505_HRIGORCHUK" (b5d60022)
+2022-11-16T13:31:02.5390807+03:00 80000004-0001-fe00-b63f-84710c7967bb [INF] info: group=, page=1 (85a87afb)
